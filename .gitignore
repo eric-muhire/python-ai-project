@@ -1,0 +1,15 @@
+# Python
+.venv/
+__pycache__/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
