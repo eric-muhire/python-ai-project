@@ -7,7 +7,7 @@ import csv
 from pathlib import Path
 
 
-
+"""""
 price = 2_453_000
 rooms = 2.0
 district = "Majorna"
@@ -56,7 +56,9 @@ path = Path(__file__).parent.parent / "data" / "apartments_small.csv"
 with open(path, encoding="utf-8", newline="") as file:
     rows = list(csv.DictReader(file))
 
-print(rows[0]["district"], rows[0]["price"])
+print(rows[0]["district"], rows[0]["price"]) 
+"""
+
 
 first = apartments[0]
 print(f"{first['district']}: {first['price']:,} SEK")
