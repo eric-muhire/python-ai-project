@@ -3,12 +3,20 @@ class Animal:
     def __init__(self, name):
         self.name = name
 
+    def __repr__(self):
+        return f"Animal({self.name!r})"
+
+    def speak(self):
+        return "..."
 
 class Cat(Animal):
     def speak(self):
         return "Meow"
 
-        return
+class Cow(Animal):
+    def speak(self):
+        return "Moo"
+
 
 class Dog(Animal):
     def __init__(self, name,tricks):
