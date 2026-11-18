@@ -4,10 +4,15 @@ class Animal:
         self.name = name
 
     def __repr__(self):
-        return f"Animal({self.name!r})"
+        return f"{type(self).__name__}({self.name})"
 
     def speak(self):
         return "..."
+    def describe(self):
+        return f"{self.name} says {self.speak()})"
+
+
+
 
 class Cat(Animal):
     def speak(self):
@@ -24,6 +29,18 @@ class Dog(Animal):
         self.tricks = tricks
     def speak(self):
         return "woof"
+class Horse(Animal):
+    def __init__(self,name,height,):
+
+        super().__init__(name)
+        self.height = height
+    def speak(self):
+        return "Neigh"
+
+
+    def describe(self):
+        return f"{super().describe()} and is {self.height} cm tall"
+
 
 luna=Cat("Luna")
 rex= Dog("Rex",["Sit","Shake"])
