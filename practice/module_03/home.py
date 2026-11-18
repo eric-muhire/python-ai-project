@@ -34,7 +34,7 @@ class Home:
 
     def describe(self) -> str:
         return f"{self.listing_id}: a house in {self.district}, {self.living_area} m²" \
-               f"{self.price:,} kr, on a {self.plot_area} m² plot"
+               f"{self.price} kr, on a {self.living_area} m² plot"
 
 
 
