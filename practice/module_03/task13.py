@@ -1,4 +1,4 @@
-from animals import Cow
+from animals import Cow, Horse
 
 daisy = Cow("Daisy")
 print("Daisy",daisy)
