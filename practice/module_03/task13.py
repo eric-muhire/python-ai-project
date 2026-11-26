@@ -1,4 +1,4 @@
-from animals import Cow, Horse
+from animals import Cow,Horse
 
 daisy = Cow("Daisy")
 print("Daisy",daisy)
@@ -6,6 +6,6 @@ print("Daisy says ",daisy.speak())
 
 
 
-Storm = Horse("160",150)
+Storm = Horse("Daisy",1560)
 
 print(f"Storm",Storm)
